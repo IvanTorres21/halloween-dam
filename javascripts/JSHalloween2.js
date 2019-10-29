@@ -227,7 +227,7 @@ function exitWeb() {
 
     recursiveDelay(createExitButton, 40, 0.1);
     setTimeout(
-        function () {
+        function() {
             document.getElementById("second").remove();
             document.getElementById("third").style.display = "initial";
             stopAllMusic();
@@ -237,7 +237,7 @@ function exitWeb() {
                 alert("I'm Sorry");
             }, 2000);
         }
-    ), 4000;
+    , 4000);
 
 }
 //This function changes the avatar picture
