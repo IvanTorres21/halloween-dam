@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="mozilla-firefox">
+    <title>Spooky page</title>
+    <link id="ico1" href="imagenes/favicon1.ico" rel="icon">
+    <link href="estilos/HalloweenStyle.css" rel="stylesheet">
+    <script src="javascripts/JSHalloween2.js"></script>
+</head>
+
+<body onload="startMusic('back1')">
+    <div id="first">
+        <audio id="back1" loop>
+            <source src="sonidos/BackgroundMusic1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back2" loop>
+            <source src="sonidos/BackgroundMusic2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back3" loop>
+            <source src="sonidos/BackgroundMusic3.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back4" loop>
+            <source src="sonidos/BackgroundMusic4.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="scream1">
+            <source src="sonidos/Scream1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="scream2">
+            <source src="sonidos/Scream2.mp3" type="audio/mpeg">
+        </audio>
+        <div class="header">
+            <h1 id="MainTitle">Happy Halloween!</h1>
+        </div>
+        <div class="topnav">
+            <a href="#"></a>
+        </div>
+        <div class="row">
+            <div class="column middle">
+                <h2>Jack o'lantern Story</h2>
+                <p id="pMid">
+                    Stingy Jack was a miserable, old drunk who took pleasure in playing tricks on just about everyone:
+                    family,friends, his mother and even the Devil himself. One day, he tricked the Devil into climbing
+                    up an
+                    apple tree.
+                </p>
+                <p id="pMid">
+                    After the Devil climbed up the tree, Stingy Jack hurriedly placed crosses around the trunk of the
+                    tree.
+                    Unable to touch a cross, the Devil was stuck in the tree. Stingy Jack made the Devil promise him not
+                    to
+                    take his soul when he died. Once the devil promised not to take his soul, Stingy Jack removed the
+                    crosses, and the Devil climbed down out of the apple tree.
+                </p>
+                <p id="pMid">
+                    Many years later, Jack died, he went to the pearly gates of Heaven and was told by Saint Peter that
+                    he
+                    was mean and cruel, and had led a miserable, worthless life on earth. Stingy Jack was not allowed to
+                    enter heaven. He then went down to Hell and the Devil. The Devil kept his promise and would not
+                    allow
+                    him to enter Hell. Now Jack was scared.
+                </p>
+                <p id="pMid">
+                    He had nowhere to go, but to wander about forever in the dark Netherworld between heaven and hell.
+                    He
+                    asked the Devil how he could leave, as there was no light. The Devil tossed him an ember from the
+                    flames
+                    of Hell, to help Stingy Jack light his way. Jack had a Turnip with him. It was one of his favorite
+                    foods, and he always carried one with him.
+                </p>
+                <p id="pMid">
+                    Jack hollowed out the Turnip, and placed the ember the Devil had given him, inside the turnip. From
+                    that
+                    day onward, Stingy Jack roamed the earth without a resting place, lighting his way as he went with
+                    his
+                    "Jack O'Lantern".
+                </p>
+                <p id="pMid">
+                    On all Hallow's eve, the Irish hollowed out Turnips, rutabagas, gourds, potatoes and beets. They
+                    placed
+                    a light in them to ward off evil spirits and keep Stingy Jack away. These were the original Jack
+                    O'Lanterns. In the 1800's a couple of waves of Irish immigrants came to America. The Irish
+                    immigrants
+                    quickly discovered that Pumpkins were bigger and easier to carve out. So they used pumpkins for Jack
+                    O'Lanterns.
+                </p>
+            </div>
+            <div class="column side">
+                <br>
+                <img id="profPic" src="imagenes/profPic1.png" alt="profile">
+                <img id="profPic2" src="imagenes/profpic2.png" alt="profile">
+            </div>
+        </div>
+        <img id="ghost" src="imagenes/ghost.gif" alt="mun"
+            onclick="moveGhost('ghost'), moveTextBox('GhostText', 'GhostP')">
+        <img id="pumpkin" src="imagenes/pumpkin.png" alt="pumpkin"
+            onmouseover="startMusic('scream1'), changeProf('profPic2')">
+        <img id="jumpScare1" src="imagenes/jumpscare1.png" alt="jumpscare1">
+        <div id="MusicPumpkin" onclick="stopAllMusic(), startMusic('back1')"></div>
+        <div id="MusicPumpkin2" onclick="stopAllMusic(), startMusic('back2')"></div>
+        <div id="MusicPumpkin3"
+            onclick="jumpScare('jumpScare1', 'scream2'),changeText('GhostP','MusicPumpkin3','GhostText')"></div>
+        <div id="MusicPumpkin4" onclick="stopAllMusic(), startMusic('back3')"></div>
+        <div id="MusicPumpkin5"
+            onclick="stopAllMusic(), startMusic('back4'),changeText('GhostP','MusicPumpkin5','GhostText')"></div>
+        <div id="GhostText">
+
+            <p id="GhostP">
+                Hello! I'm Spooky, a ghost,<i> pretty obvious if you think about it</i>.
+                Well, this is my website! What do you think of it, pretty cool right?
+                Oh! Let me show you around. Let me know when you are ready by clicking
+                on me.
+            </p>
+        </div>
+        <button id="Opt1" onclick="theEnd('Opt1')">YES!</button>
+        <button id="Opt2" onclick="theEnd('Opt2')">no</button>
+        <div id="AllButtons"></div>
+    </div>
+    <div id="second">
+        <audio id="back5" loop>
+            <source src="sonidos/BackgroundMusic5.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="demVoic" loop>
+            <source src="sonidos/DemonVoices.mp3" type="audio/mpeg">
+        </audio>
+        <img id="eyes" src="imagenes/TheOtherSide/Eyes.gif" alt="eyes">
+        <img id="eyesEating" src="imagenes/TheOtherSide/EyesEating.gif" alt="eyEat">
+        <img id="fly" src="imagenes/TheOtherSide/Fly.gif" alt="fly">
+        <img id="head" src="imagenes/TheOtherSide/Head.gif" alt="head">
+        <img id="mask" src="imagenes/TheOtherSide/Mask.gif" alt="mask">
+        <img id="realEye" src="imagenes/TheOtherSide/RealEye.gif" alt="realEye">
+        <img id="tongue" src="imagenes/TheOtherSide/tongue.gif" alt="tongue">
+        <button id="exitbutton" onclick="exitWeb()">Exit</button>
+        <div id="AllExitButtons"></div>
+    </div>
+    <div id="third">
+        <audio id="back1" loop>
+            <source src="sonidos/BackgroundMusic1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back2" loop>
+            <source src="sonidos/BackgroundMusic2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back3" loop>
+            <source src="sonidos/BackgroundMusic3.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back4" loop>
+            <source src="sonidos/BackgroundMusic4.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="back5" loop>
+            <source src="sonidos/BackgroundMusic5.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="header">
+            <h1 id="MainTitle">Happy Halloween!</h1>
+        </div>
+        <div class="topnav">
+            <a href="#"></a>
+        </div>
+        <div class="row">
+            <div class="column middle">
+                <h2>Jack o'lantern Story</h2>
+                <p id="pMid">
+                    Stingy Jack was a miserable, old drunk who took pleasure in playing tricks on just about everyone:
+                    family,friends, his mother and even the Devil himself. One day, he tricked the Devil into climbing
+                    up an
+                    apple tree.
+                </p>
+                <p id="pMid">
+                    After the Devil climbed up the tree, Stingy Jack hurriedly placed crosses around the trunk of the
+                    tree.
+                    Unable to touch a cross, the Devil was stuck in the tree. Stingy Jack made the Devil promise him not
+                    to
+                    take his soul when he died. Once the devil promised not to take his soul, Stingy Jack removed the
+                    crosses, and the Devil climbed down out of the apple tree.
+                </p>
+                <p id="pMid">
+                    Many years later, Jack died, he went to the pearly gates of Heaven and was told by Saint Peter that
+                    he
+                    was mean and cruel, and had led a miserable, worthless life on earth. Stingy Jack was not allowed to
+                    enter heaven. He then went down to Hell and the Devil. The Devil kept his promise and would not
+                    allow
+                    him to enter Hell. Now Jack was scared.
+                </p>
+                <p id="pMid">
+                    He had nowhere to go, but to wander about forever in the dark Netherworld between heaven and hell.
+                    He
+                    asked the Devil how he could leave, as there was no light. The Devil tossed him an ember from the
+                    flames
+                    of Hell, to help Stingy Jack light his way. Jack had a Turnip with him. It was one of his favorite
+                    foods, and he always carried one with him.
+                </p>
+                <p id="pMid">
+                    Jack hollowed out the Turnip, and placed the ember the Devil had given him, inside the turnip. From
+                    that
+                    day onward, Stingy Jack roamed the earth without a resting place, lighting his way as he went with
+                    his
+                    "Jack O'Lantern".
+                </p>
+                <p id="pMid">
+                    On all Hallow's eve, the Irish hollowed out Turnips, rutabagas, gourds, potatoes and beets. They
+                    placed
+                    a light in them to ward off evil spirits and keep Stingy Jack away. These were the original Jack
+                    O'Lanterns. In the 1800's a couple of waves of Irish immigrants came to America. The Irish
+                    immigrants
+                    quickly discovered that Pumpkins were bigger and easier to carve out. So they used pumpkins for Jack
+                    O'Lanterns.
+                </p>
+            </div>
+            <div class="column side">
+                <br>
+                <img id="profPic" src="imagenes/missingProfPic.png" alt="profile">
+            </div>
+        </div>
+        <img id="pumpkin" src="imagenes/pumpkin.png" alt="pumpkin">
+        <div id="MusicPumpkin" onclick="stopAllMusic(), startMusic('back1')"></div>
+        <div id="MusicPumpkin2" onclick="stopAllMusic(), startMusic('back2')"></div>
+        <div id="MusicPumpkin3" onclick="stopAllMusic(), startMusic('back5')"></div>
+        <div id="MusicPumpkin4" onclick="stopAllMusic(), startMusic('back3')"></div>
+        <div id="MusicPumpkin5" onclick="stopAllMusic(), startMusic('back4')"></div>
+    </div>
+</body>
+
+</html>

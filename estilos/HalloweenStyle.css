@@ -1,0 +1,311 @@
+/* Este es el documento de estilo de halloween2 */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        @font-face {
+            font-family: Gypsy;
+            src: url("../fuentes/Gypsy.ttf");
+        }
+
+        .header {
+
+            background-image: url(../imagenes/banner2.jpg);
+            padding: 5px;
+            height: 400px;
+            text-align: center;
+        }
+
+        body {
+            margin: auto;
+            width: 1200px;
+            background-color: black;
+        }
+
+        #first {
+            margin: auto;
+            width: 1200px;
+            background-color: black;
+        }
+
+        #second {
+            margin: auto;
+            width: 1200px;
+            background-color: black;
+            display: none;
+        }
+
+        #third {
+            margin: auto;
+            width: 1200px;
+            background-color: black;
+            display: none;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(106, 197, 21);
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: wheat;
+            text-align: center;
+            padding: 7px 8px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(136, 136, 136);
+            color: black;
+        }
+
+        .column {
+
+            float: left;
+            padding: 10px;
+
+        }
+
+        .column.middle {
+
+            width: 70%;
+        }
+
+        .column.side {
+            position: relative;
+            margin-top: 60px;
+            border-left: solid 2px rgb(106, 197, 21);
+            width: 30%;
+            height: 100vh;
+            color: rgb(163, 163, 163);
+        }
+
+        .row {
+            background-color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #container {
+            position: relative;
+            width: 200px;
+        }
+
+        #pumpkin {
+            position: absolute;
+            top: 630px;
+            right: 280px;
+            width: 100px;
+        }
+
+        #pMid {
+
+            margin: 20px 200px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #profPic {
+            position: absolute;
+            left: 20px;
+            margin: auto;
+            right: 20px;
+            width: 250px;
+            border-radius: 50%;
+            border: 1px solid rgb(106, 197, 21);
+        }
+
+        #profPic2 {
+            position: absolute;
+            left: 20px;
+            margin: auto;
+            right: 20px;
+            width: 250px;
+            border-radius: 50%;
+            visibility: hidden;
+
+        }
+
+        #MainTitle {
+
+            color: orangered;
+            text-shadow: 3px 2px 40px yellow;
+            font-family: 'Gypsy';
+            font-size: 100px;
+        }
+
+        #ghost {
+
+            position: absolute;
+            width: 200px;
+            top: 320px;
+            left: 200px;
+            z-index: 1000;
+        }
+
+        #MusicPumpkin {
+            position: absolute;
+            top: 180px;
+            left: 60px;
+            width: 150px;
+            height: 220px;
+
+        }
+
+        #MusicPumpkin2 {
+            position: absolute;
+            top: 160px;
+            left: 280px;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        #MusicPumpkin3 {
+            position: absolute;
+            top: 150px;
+            left: 540px;
+            width: 260px;
+            height: 200px;
+
+        }
+
+        #MusicPumpkin4 {
+            position: absolute;
+            top: 150px;
+            left: 840px;
+            width: 230px;
+            height: 200px;
+
+        }
+
+        #MusicPumpkin5 {
+            position: absolute;
+            top: 150px;
+            left: 1100px;
+            width: 180px;
+            height: 200px;
+
+        }
+
+        #jumpScare1 {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            width: 800px;
+            visibility: hidden;
+        }
+
+        #GhostText {
+            position: absolute;
+            background-color: rgba(0, 255, 255, 0.781);
+            width: 200px;
+            color: black;
+            padding: 4px;
+            text-align: center;
+            top: 200px;
+            left: 400px;
+            z-index: 999;
+        }
+
+        #Opt1 {
+            position: absolute;
+            width: 50px;
+            background-color: white;
+            text-align: center;
+            visibility: hidden;
+
+        }
+
+        #Opt2 {
+            position: absolute;
+            width: 50px;
+            background-color: white;
+            text-align: center;
+            visibility: hidden;
+
+        }
+
+        /*The next styles are for the second part*/
+        #eyes {
+
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 400px;
+        }
+
+        #realEye {
+
+            position: absolute;
+            top: 100px;
+            left: 700px;
+            width: 200px;
+        }
+
+        #tongue {
+
+            position: absolute;
+            top: 400px;
+            left: 1000px;
+            width: 200px;
+        }
+
+        #eyesEating {
+
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            width: 200px;
+        }
+
+        #fly {
+
+            position: absolute;
+            top: 300px;
+            left: 900px;
+            width: 200px;
+        }
+
+        #head {
+
+            position: absolute;
+            top: 400px;
+            left: 360px;
+            width: 200px;
+        }
+
+        #mask {
+
+            position: absolute;
+            top: 340px;
+            left: 200px;
+            width: 200px;
+        }
+
+        #exitbutton {
+
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            top: 400px;
+            left: 600px;
+            visibility: hidden;
+        }
