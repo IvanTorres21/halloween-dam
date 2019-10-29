@@ -225,7 +225,7 @@ function createExitButton() {
 //This function exits The Other Side
 function exitWeb() {
 
-    recursiveDelay(createExitButton, 40, 0.1);
+    recursiveDelay(createExitButton, 20, 0.1);
     setTimeout(
         function() {
             document.getElementById("second").remove();
