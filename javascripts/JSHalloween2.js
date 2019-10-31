@@ -158,7 +158,7 @@ function theEnd(opt) {
     document.getElementById("Opt2").style.backgroundColor = "red";
     stopAllMusic();
     recursiveDelay(creatButton, 20, 0.1);
-    var ghost = document.getElementById("ghost").src = "imagenes/ghost2.gif";
+    var ghost = document.getElementById("ghost").src = "../imagenes/ghost2.gif";
     moveTextBox("GhostText", "GhostP");
     setTimeout(function () {
         document.getElementById("first").remove();
